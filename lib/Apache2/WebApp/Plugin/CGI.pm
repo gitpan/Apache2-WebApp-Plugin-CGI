@@ -20,7 +20,7 @@ use warnings;
 use base 'Apache2::WebApp::Plugin';
 use Params::Validate qw( :all );
 
-our $VERSION = 0.01;
+our $VERSION = 0.02;
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~[  OBJECT METHODS  ]~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 
@@ -122,7 +122,7 @@ Use of CPAN.pm in interactive mode:
   cpan> install Apache2::WebApp::Plugin::CGI
   cpan> quit
 
-Just like the manual installation of perl modules, the user may need root access during
+Just like the manual installation of Perl modules, the user may need root access during
 this process to insure write permission is allowed within the installation directory.
 
 =head1 OBJECT METHODS
@@ -141,7 +141,7 @@ Redirect an HTTP request to a target URI or URL.
 
 =head1 SEE ALSO
 
-L<Apache2::WebApp>, L<Apache2::WebApp::Plugin>, L<Apache2::Request>, L<Params::Validate>
+L<Apache2::WebApp>, L<Apache2::WebApp::Plugin>, L<Apache2::Request>
 
 =head1 AUTHOR
 
