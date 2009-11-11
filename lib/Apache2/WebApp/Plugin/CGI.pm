@@ -20,7 +20,7 @@ use warnings;
 use base 'Apache2::WebApp::Plugin';
 use Params::Validate qw( :all );
 
-our $VERSION = 0.02;
+our $VERSION = 0.03;
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~[  OBJECT METHODS  ]~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 
@@ -48,9 +48,9 @@ sub params {
 sub redirect {
     my ( $self, $c, $target )
       = validate_pos( @_,
-          { type   => OBJECT  },
-          { type   => HASHREF },
-          { target => SCALAR  },
+          { type => OBJECT  },
+          { type => HASHREF },
+          { type => SCALAR  },
           );
 
     my $status = $c->request->protocol eq "HTTP/1.1" ? 303 : 302;
