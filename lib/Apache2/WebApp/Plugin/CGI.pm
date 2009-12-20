@@ -20,7 +20,7 @@ use warnings;
 use base 'Apache2::WebApp::Plugin';
 use Params::Validate qw( :all );
 
-our $VERSION = 0.03;
+our $VERSION = 0.04;
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~[  OBJECT METHODS  ]~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 
@@ -99,7 +99,7 @@ This package is part of a larger distribution and was NOT intended to be used
 directly.  In order for this plugin to work properly, the following packages
 must be installed:
 
-  Apache2::WebApp::Toolkit
+  Apache2::WebApp
   Params::Validate
 
 =head1 INSTALLATION
