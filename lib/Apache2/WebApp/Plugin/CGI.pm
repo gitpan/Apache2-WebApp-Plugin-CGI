@@ -20,7 +20,7 @@ use warnings;
 use base 'Apache2::WebApp::Plugin';
 use Params::Validate qw( :all );
 
-our $VERSION = 0.07;
+our $VERSION = 0.08;
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~[  OBJECT METHODS  ]~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 
@@ -109,16 +109,16 @@ From source:
   $ tar xfz Apache2-WebApp-Plugin-CGI-0.X.X.tar.gz
   $ perl MakeFile.PL PREFIX=~/path/to/custom/dir LIB=~/path/to/custom/lib
   $ make
-  $ make test     <--- Make sure you do this before contacting me
+  $ make test
   $ make install
 
 Perl one liner using CPAN.pm:
 
-  perl -MCPAN -e 'install Apache2::WebApp::Plugin::CGI'
+  $ perl -MCPAN -e 'install Apache2::WebApp::Plugin::CGI'
 
 Use of CPAN.pm in interactive mode:
 
-  $> perl -MCPAN -e shell
+  $ perl -MCPAN -e shell
   cpan> install Apache2::WebApp::Plugin::CGI
   cpan> quit
 
